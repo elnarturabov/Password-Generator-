@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="conteiner">
+      <header>
+        <h1>
+          <i class="fa-etch fa-solid fa-key fa-xl" style="color: #ffd333"></i>
+          Password Generator
+        </h1>
+        <div class="dark-theme">
+          <i
+            class="fa-regular fa-moon fa-rotate-by fa-xl"
+            style="--fa-rotate-angle: 340deg"
+          >
+          </i>
+          <i class="fa-regular fa-sun fa-xl"></i>
+        </div>
+      </header>
+      <section>
+        <div class="add">
+          <div class="info">
+            <h2>Generate a Secure Password</h2>
+            <p>
+              Create strong and secure passwords for protect your account online
+            </p>
+          </div>
+          <div class="display">
+            <div class="screen">
+              <input
+                type="text"
+                name="charset"
+                id="charset"
+                value="ASDFGHJKLZXCVBNMQWERTYUIOPAS"
+                readonly
+                autocomplete="off"
+              />
+              <div class="copy">
+                <i class="fa-regular fa-copy fa-rotate-by fa-xl"> </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings">
+            <div class="box">
+            <h3>Customize your password</h3>
+            <div class="lenght">
+              <p>Password Lenght</p>
+              <p>8</p>
+            </div>
+            <input
+              type="range"
+              name="lenght"
+              id="lenght"
+              min="1"
+              max="30"
+              value="8"
+            />
+            <div class="checkbox">
+              <label for="uppercase">
+                  <input type="checkbox" name="uppercase" id="uppercase" />
+                Uppercase(A-Z)
+              </label>
+              <label for="lowercase">
+                  <input type="checkbox" name="lowercase" id="lowercase" />
+                Lowercase(a-z)
+              </label>
+              <label for="number">
+                  <input type="checkbox" name="number" id="number" />
+                Number(0-9)
+              </label>
+              <label for="symbol">
+                  <input type="checkbox" name="symbol" id="symbol" />
+                Symbol(!$@)
+              </label>
+            </div>
+            <div class="strength">
+              <p>Strenght:</p>
+              <p class="difficult1">1</p>
+              <p class="difficult2">2</p>
+              <p class="difficult3">3</p>
+              <p class="difficult4">4</p>
+              <p class="strenght-value">Strong</p>
+            </div>
+          </div>
+          </div>
+          <a href="#"class="submit">Generate Password</a>
+        </div>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>

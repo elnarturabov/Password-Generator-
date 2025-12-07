@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
+:root {
+  --font-fam: "Momo Trust Display", sans-serif;
+  --font-weight: 400;
+  --font-style: normal;
+  --second-color: rgb(223, 153, 0);
+  --font-primary-color: beige;
+  --font-secondly-color: rgb(152, 152, 152);
+  --background-color: hsl(26, 14%, 8%);
+  --background-second-color:hsl(20, 9%, 13%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.conteiner {
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--font-primary-color);
+  font-family: var(--font-fam);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+}
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+section {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add {
+  width: 50rem;
+  background-color: var(--background-second-color);
+  border-radius: 15px;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.info p {
+  font-size: 1.1rem;
+  color: var(--font-secondly-color);
+}
+.screen {
+  margin: 2rem;
+}
+input[type="text"] {
+  width: 45rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: rgb(43, 43, 44);
+  color: beige;
+}
+.display {
+  display: flex;
+  justify-content: center;
+}
+.screen {
+  width: auto;
+  position: relative;
+}
+.copy {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: var(--second-color);
+  border-radius: 6px;
+  padding: 5px 0;
+}
+.copy:hover {
+  scale: 1.05;
+  transform: translate(0, -1px);
+  cursor: pointer;
+}
+
+.settings {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 700px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: rgb(43, 43, 44);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+input::-webkit-slider-runnable-track {
+  height: 10px;
+  background: rgb(125, 91, 16);
+  border-radius: 10px;
+}
+ input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: beige;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid var(--second-color);
+  cursor: pointer;
+  margin-top: -6px; /* track-a otursun deyə */
+}
+.lenght {
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: var(--font-secondly-color);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: start;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  justify-items: center;
+}
+label {
+  width: 15rem;
+  text-align: start;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+.strength {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+ .difficult1,.difficult2,.difficult3,.difficult4 {
+  border-radius: 0.5rem;
+  width: 7rem;
+  background-color: var(--second-color);
+  font-size: 1rem;
+}
+.strength p{
+  font-size: 1.3rem;
+  color: var(--font-secondly-color);
+}
+
+.submit {
+  display: inline-block;
+  width: 46rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.9rem 0;
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--second-color);
+  color: var(--font-primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
