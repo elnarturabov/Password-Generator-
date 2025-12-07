@@ -4,10 +4,18 @@
   --font-weight: 400;
   --font-style: normal;
   --second-color: rgb(223, 153, 0);
-  --font-primary-color: beige;
+  --font-primary-color: rgba(250, 250, 212, 1);
   --font-secondly-color: rgb(152, 152, 152);
-  --background-color: hsl(26, 14%, 8%);
-  --background-second-color:hsl(20, 9%, 13%);
+  --background-color: hsl(30, 11%, 7%);
+  --third-color:rgba(32, 32, 32,1);
+}
+/* Dark theme */
+body.light {
+  --background-color: rgb(232, 230, 227);
+  --font-primary-color: rgba(16,16,16,1);
+  --third-color: rgb(186, 186, 186);
+  --font-primary-color: rgb(14, 14, 14);
+  --font-secondly-color: rgb(63, 61, 61);
 }
 * {
   margin: 0;
@@ -28,12 +36,20 @@
 header {
   padding: 16px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 h1 {
   font-size: 1.7rem;
   font-weight: 500;
 }
+#sun{
+  display:none;
+}
+#dark-theme{
+cursor: pointer;
+}
+
 section {
   width: 100%;
   height: 90%;
@@ -43,7 +59,7 @@ section {
 }
 .add {
   width: 50rem;
-  background-color: var(--background-second-color);
+  /*background-color: var(--background-second-color);*/
   border-radius: 15px;
 }
 h2 {
@@ -67,8 +83,9 @@ input[type="text"] {
   border-radius: 10px;
   padding: 1rem;
   font-weight: 600;
-  background-color: rgb(43, 43, 44);
-  color: beige;
+  background-color: var(--third-color);
+  color:var(--font-primary-color);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.34) 0px 1px 2px;
 }
 .display {
   display: flex;
@@ -82,7 +99,7 @@ input[type="text"] {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  color: var(--second-color);
+  color: var(--font-primary-color);
   border-radius: 6px;
   padding: 5px 0;
 }
@@ -102,7 +119,9 @@ input[type="text"] {
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
+  appearance: none;
+-webkit-appearance: none; /* Chrome, Safari, iOS */
+-moz-appearance: none;
   width: 100%;
   height: 10px;
   background: rgb(43, 43, 44);
@@ -112,7 +131,7 @@ input[type="range"] {
 }
 input::-webkit-slider-runnable-track {
   height: 10px;
-  background: rgb(125, 91, 16);
+  background: var(--second-color);
   border-radius: 10px;
 }
  input[type="range"]::-webkit-slider-thumb {
@@ -158,19 +177,21 @@ label {
   align-items:center;
   gap: 1rem;
   margin: 1rem 0;
+  color: var(--second-color);
 }
  .difficult1,.difficult2,.difficult3,.difficult4 {
   border-radius: 0.5rem;
   width: 7rem;
   background-color: var(--second-color);
   font-size: 1rem;
+  
 }
 .strength p{
   font-size: 1.3rem;
   color: var(--font-secondly-color);
 }
 
-.submit {
+#submit {
   display: inline-block;
   width: 46rem;
   font-size: 1.2rem;

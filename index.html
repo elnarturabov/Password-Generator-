@@ -17,16 +17,16 @@
     <main class="conteiner">
       <header>
         <h1>
-          <i class="fa-etch fa-solid fa-key fa-xl" style="color: #ffd333"></i>
+          <i  class="fa-etch fa-solid fa-key fa-xl" style="color: #ecc538"></i>
           Password Generator
         </h1>
-        <div class="dark-theme">
+        <div id="dark-theme">
           <i
             class="fa-regular fa-moon fa-rotate-by fa-xl"
             style="--fa-rotate-angle: 340deg"
           >
           </i>
-          <i class="fa-regular fa-sun fa-xl"></i>
+          <i id="sun" class="fa-regular fa-sun fa-xl"></i>
         </div>
       </header>
       <section>
@@ -43,7 +43,7 @@
                 type="text"
                 name="charset"
                 id="charset"
-                value="ASDFGHJKLZXCVBNMQWERTYUIOPAS"
+                value="ASDFGHJKL"
                 readonly
                 autocomplete="off"
               />
@@ -58,7 +58,7 @@
             <h3>Customize your password</h3>
             <div class="lenght">
               <p>Password Lenght</p>
-              <p>8</p>
+              <p id="lenght-value">8</p>
             </div>
             <input
               type="range"
@@ -92,11 +92,11 @@
               <p class="difficult2">2</p>
               <p class="difficult3">3</p>
               <p class="difficult4">4</p>
-              <p class="strenght-value">Strong</p>
+              <p id="strenght-value">Strong</p>
             </div>
           </div>
           </div>
-          <a href="#"class="submit">Generate Password</a>
+          <a href="#" id="submit">Generate Password</a>
         </div>
       </section>
     </main>
